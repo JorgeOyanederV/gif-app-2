@@ -11,8 +11,7 @@ export const AddCategorie = ({ setCategories }) => {
    const addCategorie = (event) => {
       event.preventDefault();
       const { value } = event.target;
-      console.log(inputValue);
-      setCategories(element => [...element, inputValue])
+      setCategories(element => [inputValue, ...element])
    }
    return (<form onSubmit={addCategorie}>
       <input value={inputValue} onChange={handdleAdd} ></input>
