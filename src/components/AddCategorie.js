@@ -10,7 +10,6 @@ export const AddCategorie = ({ setCategories }) => {
 
    const addCategorie = (event) => {
       event.preventDefault();
-      const { value } = event.target;
       setCategories(element => [inputValue, ...element])
    }
    return (<form onSubmit={addCategorie}>
